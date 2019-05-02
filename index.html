@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>{{greet(new Date())}}</h1>
+      <h1>{{name}}</h1>
+      <a v-bind:href="website">website</a>
+      <p>My age :{{age}}</p>
+      <button v-on:click="add()">add age</button>
+    </div>
+    <script src="app.js"></script>
+</html>
